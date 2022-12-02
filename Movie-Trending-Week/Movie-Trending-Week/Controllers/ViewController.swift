@@ -9,11 +9,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var midias = MidiasBrain()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        midias.delegate = self
+        midias.apiRequest(midiaType: .movie)
+        
         // Do any additional setup after loading the view.
     }
 
 
+}
+
+extension ViewController: MidiaDelegate {
+    func midiaTransferSuccess(midia: Midias) {
+        DispatchQueue.main.async {
+            print(midia)
+        }
+    }
+    
+    func midiaTransferFailed() {
+        print("Erro")
+    }
+    
 }
 

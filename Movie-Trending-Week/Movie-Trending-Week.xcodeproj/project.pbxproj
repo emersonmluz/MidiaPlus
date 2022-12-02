@@ -16,6 +16,7 @@
 		EEBA4348293A624E008ADE35 /* Midias.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA4347293A624E008ADE35 /* Midias.swift */; };
 		EEBA434A293A631B008ADE35 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA4349293A631B008ADE35 /* Movie.swift */; };
 		EEBA434C293A6543008ADE35 /* MidiasBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA434B293A6543008ADE35 /* MidiasBrain.swift */; };
+		EEBA434E293A6625008ADE35 /* MidiaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA434D293A6625008ADE35 /* MidiaType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EEBA4347293A624E008ADE35 /* Midias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Midias.swift; sourceTree = "<group>"; };
 		EEBA4349293A631B008ADE35 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		EEBA434B293A6543008ADE35 /* MidiasBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiasBrain.swift; sourceTree = "<group>"; };
+		EEBA434D293A6625008ADE35 /* MidiaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiaType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				EEBA434B293A6543008ADE35 /* MidiasBrain.swift */,
 				EEBA4347293A624E008ADE35 /* Midias.swift */,
 				EEBA4349293A631B008ADE35 /* Movie.swift */,
+				EEBA434D293A6625008ADE35 /* MidiaType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				EEBA4331293A6205008ADE35 /* AppDelegate.swift in Sources */,
 				EEBA4348293A624E008ADE35 /* Midias.swift in Sources */,
 				EEBA4333293A6205008ADE35 /* SceneDelegate.swift in Sources */,
+				EEBA434E293A6625008ADE35 /* MidiaType.swift in Sources */,
 				EEBA434A293A631B008ADE35 /* Movie.swift in Sources */,
 				EEBA434C293A6543008ADE35 /* MidiasBrain.swift in Sources */,
 			);
