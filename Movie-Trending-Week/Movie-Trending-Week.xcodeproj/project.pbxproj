@@ -17,6 +17,7 @@
 		EEBA434A293A631B008ADE35 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA4349293A631B008ADE35 /* Movie.swift */; };
 		EEBA434C293A6543008ADE35 /* MidiasBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA434B293A6543008ADE35 /* MidiasBrain.swift */; };
 		EEBA434E293A6625008ADE35 /* MidiaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA434D293A6625008ADE35 /* MidiaType.swift */; };
+		EEBA4350293A7FB3008ADE35 /* CellSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA434F293A7FB3008ADE35 /* CellSetup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		EEBA4349293A631B008ADE35 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		EEBA434B293A6543008ADE35 /* MidiasBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiasBrain.swift; sourceTree = "<group>"; };
 		EEBA434D293A6625008ADE35 /* MidiaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiaType.swift; sourceTree = "<group>"; };
+		EEBA434F293A7FB3008ADE35 /* CellSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				EEBA4336293A6205008ADE35 /* Main.storyboard */,
+				EEBA434F293A7FB3008ADE35 /* CellSetup.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				EEBA4335293A6205008ADE35 /* ViewController.swift in Sources */,
 				EEBA4331293A6205008ADE35 /* AppDelegate.swift in Sources */,
 				EEBA4348293A624E008ADE35 /* Midias.swift in Sources */,
+				EEBA4350293A7FB3008ADE35 /* CellSetup.swift in Sources */,
 				EEBA4333293A6205008ADE35 /* SceneDelegate.swift in Sources */,
 				EEBA434E293A6625008ADE35 /* MidiaType.swift in Sources */,
 				EEBA434A293A631B008ADE35 /* Movie.swift in Sources */,
