@@ -15,8 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         midias.delegate = self
-        midias.apiRequest(midiaType: .movie)
-        
+      
         // Do any additional setup after loading the view.
     }
 
@@ -26,7 +25,7 @@ class ViewController: UIViewController {
 extension ViewController: MidiaDelegate {
     func midiaTransferSuccess(midia: Midias) {
         DispatchQueue.main.async {
-            print(midia)
+          
         }
     }
     

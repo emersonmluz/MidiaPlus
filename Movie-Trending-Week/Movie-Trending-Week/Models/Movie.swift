@@ -21,7 +21,7 @@ struct Movie: Codable {
         case id
         case title
         case overview
-        case posterPath = "poste_path"
+        case posterPath = "poster_path"
         case popularity
         case releaseDate = "release_date"
         case voteMedia = "vote_average"
