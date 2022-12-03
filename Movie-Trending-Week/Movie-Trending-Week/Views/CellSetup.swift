@@ -17,6 +17,8 @@ class CellSetup: UITableViewCell {
     @IBOutlet weak var averageOfotesImageView: UIImageView!
     @IBOutlet weak var numberOfVotesLabel: UILabel!
     @IBOutlet weak var numberOfVotesImageView: UIImageView!
+    @IBOutlet weak var reviewLabel: UILabel!
+    
     
     let dateFormat = DateFormatter()
     
@@ -37,6 +39,8 @@ class CellSetup: UITableViewCell {
         numberOfVotesLabel.text = String(midia.voteTotal)
         numberOfVotesImageView.image = UIImage(systemName: "person.circle")
         numberOfVotesImageView.tintColor = UIColor.purple
+        
+        reviewLabel.text = "Review: " + midia.overview
     }
     
 }
