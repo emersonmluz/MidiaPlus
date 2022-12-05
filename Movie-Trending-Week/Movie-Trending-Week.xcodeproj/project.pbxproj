@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE80ECF1293EBA64001EE8FB /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF0293EBA64001EE8FB /* PeopleViewController.swift */; };
+		EE80ECF3293EBB33001EE8FB /* CellSetupPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF2293EBB33001EE8FB /* CellSetupPeople.swift */; };
 		EEAD40D4293D8CC700D0ABCA /* TvShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD40D3293D8CC700D0ABCA /* TvShowViewController.swift */; };
 		EEAD40DE293E618E00D0ABCA /* TvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD40DD293E618E00D0ABCA /* TvShow.swift */; };
 		EEAD40E0293E620000D0ABCA /* TvShowList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD40DF293E620000D0ABCA /* TvShowList.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE80ECF0293EBA64001EE8FB /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		EE80ECF2293EBB33001EE8FB /* CellSetupPeople.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetupPeople.swift; sourceTree = "<group>"; };
 		EEAD40D3293D8CC700D0ABCA /* TvShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowViewController.swift; sourceTree = "<group>"; };
 		EEAD40DD293E618E00D0ABCA /* TvShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShow.swift; sourceTree = "<group>"; };
 		EEAD40DF293E620000D0ABCA /* TvShowList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowList.swift; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 			children = (
 				EEBA4334293A6205008ADE35 /* MoviesViewController.swift */,
 				EEAD40D3293D8CC700D0ABCA /* TvShowViewController.swift */,
+				EE80ECF0293EBA64001EE8FB /* PeopleViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 				EEBA4336293A6205008ADE35 /* Main.storyboard */,
 				EEBA434F293A7FB3008ADE35 /* CellSetupMovies.swift */,
 				EEAD40E1293E6B0A00D0ABCA /* CellSetupTvShow.swift */,
+				EE80ECF2293EBB33001EE8FB /* CellSetupPeople.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,12 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE80ECF3293EBB33001EE8FB /* CellSetupPeople.swift in Sources */,
 				EEAD40D4293D8CC700D0ABCA /* TvShowViewController.swift in Sources */,
 				EEBA4335293A6205008ADE35 /* MoviesViewController.swift in Sources */,
 				EEAD40DE293E618E00D0ABCA /* TvShow.swift in Sources */,
 				EEBA4331293A6205008ADE35 /* AppDelegate.swift in Sources */,
 				EEAD40E2293E6B0A00D0ABCA /* CellSetupTvShow.swift in Sources */,
 				EEBA4348293A624E008ADE35 /* MoviesList.swift in Sources */,
+				EE80ECF1293EBA64001EE8FB /* PeopleViewController.swift in Sources */,
 				EEBA4350293A7FB3008ADE35 /* CellSetupMovies.swift in Sources */,
 				EEBA4333293A6205008ADE35 /* SceneDelegate.swift in Sources */,
 				EEBA434E293A6625008ADE35 /* MidiaType.swift in Sources */,
