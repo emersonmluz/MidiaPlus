@@ -1,19 +1,19 @@
 //
-//  MidiasBrain.swift
+//  TvShowBrain.swift
 //  Movie-Trending-Week
 //
-//  Created by Émerson M Luz on 02/12/22.
+//  Created by Émerson M Luz on 05/12/22.
 //
 
 import Foundation
 
-protocol MidiaDelegate {
-    func midiaTransferSuccess (midia: MidiasMovies)
-    func midiaTransferFailed ()
+protocol TvShowDelegate {
+    func tvShowTransferSuccess (tvShow: TvShowList)
+    func tvShowTransferFailed ()
 }
 
-struct MidiasBrain {
-    var delegate: MidiaDelegate?
+struct TvShowBrain {
+    var delegate: TvShowDelegate?
     
     func apiRequest (midiaType: MidiaType) {
         let url = URL(string: "https://api.themoviedb.org/3/trending/\(midiaType)/week?api_key=d8ab08a45dfeb6ee6317a10b502a476a")
@@ -41,12 +41,13 @@ struct MidiasBrain {
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .formatted(dateFormat)
                 
-                let midias = try decoder.decode(MidiasMovies.self, from: data!)
+                let midias = try decoder.decode(TvShowList.self, from: data!)
                 
-                delegate?.midiaTransferSuccess(midia: midias)
+                delegate?.tvShowTransferSuccess(tvShow: midias)
             
-            } catch {
-                delegate?.midiaTransferFailed()
+            } catch let error {
+                print(error)
+                //delegate?.tvShowTransferFailed()
                 return
             }
         }

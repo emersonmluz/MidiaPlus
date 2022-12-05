@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MidiasTv: Codable {
+struct TvShowList: Codable {
     let tvShowList: [TvShow]
     
     enum CodingKeys: String, CodingKey {

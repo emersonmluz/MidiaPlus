@@ -11,8 +11,8 @@ class MoviesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var midias = MidiasBrain()
-    var movies: MidiasMovies?
+    var midias = MoviesBrain()
+    var movies: MoviesList?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,15 +27,15 @@ class MoviesViewController: UIViewController {
 
 }
 
-extension MoviesViewController: MidiaDelegate {
-    func midiaTransferSuccess(midia: MidiasMovies) {
+extension MoviesViewController: MoviesDelegate {
+    func moviesTransferSuccess(movies: MoviesList) {
         DispatchQueue.main.async {
-            self.movies = midia
+            self.movies = movies
             self.tableView.reloadData()
         }
     }
     
-    func midiaTransferFailed() {
+    func moviesTransferFailed() {
         print("Erro")
     }
     
@@ -47,10 +47,31 @@ extension MoviesViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CellSetup
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CellSetupMovies
         
         cell.loadCell(midia: movies!.moviesList[indexPath.row])
         
         return cell
+    }
+}
+
+extension UIImageView {
+    func loadFrom(URLAddress: String) {
+        guard let url = URL(string: "https://image.tmdb.org/t/p/w500" + URLAddress) else {
+            return
+        }
+        
+        DispatchQueue.global().async {
+            let imageData = try? Data(contentsOf: url)
+            
+            DispatchQueue.main.async { [weak self] in
+                if let imageData = imageData {
+                    if let loadedImage = UIImage(data: imageData) {
+                            self?.image = loadedImage
+                    }
+                }
+            }
+        }
+
     }
 }

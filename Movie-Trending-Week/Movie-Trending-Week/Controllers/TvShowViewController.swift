@@ -9,21 +9,49 @@ import UIKit
 
 class TvShowViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var midias = TvShowBrain()
+    var tvShow: TvShowList?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        midias.delegate = self
+        midias.apiRequest(midiaType: .tv)
+        
+        tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension TvShowViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tvShow?.tvShowList.count ?? 0
     }
-    */
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CellSetupTvShow
+        
+        cell.loadCell(midia: tvShow!.tvShowList[indexPath.row])
+        
+        return cell
+    }
+}
 
+extension TvShowViewController: TvShowDelegate {
+    func tvShowTransferSuccess(tvShow: TvShowList) {
+        DispatchQueue.main.async {
+            self.tvShow = tvShow
+            self.tableView.reloadData()
+        }
+    }
+    
+    func tvShowTransferFailed() {
+        print("erro")
+    }
+    
+    
 }

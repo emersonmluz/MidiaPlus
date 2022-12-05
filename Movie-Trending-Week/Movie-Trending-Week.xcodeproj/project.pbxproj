@@ -9,24 +9,28 @@
 /* Begin PBXBuildFile section */
 		EEAD40D4293D8CC700D0ABCA /* TvShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD40D3293D8CC700D0ABCA /* TvShowViewController.swift */; };
 		EEAD40DE293E618E00D0ABCA /* TvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD40DD293E618E00D0ABCA /* TvShow.swift */; };
-		EEAD40E0293E620000D0ABCA /* MidiasTv.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD40DF293E620000D0ABCA /* MidiasTv.swift */; };
+		EEAD40E0293E620000D0ABCA /* TvShowList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD40DF293E620000D0ABCA /* TvShowList.swift */; };
+		EEAD40E2293E6B0A00D0ABCA /* CellSetupTvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD40E1293E6B0A00D0ABCA /* CellSetupTvShow.swift */; };
+		EEAD40E4293E6D4A00D0ABCA /* TvShowBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD40E3293E6D4A00D0ABCA /* TvShowBrain.swift */; };
 		EEBA4331293A6205008ADE35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA4330293A6205008ADE35 /* AppDelegate.swift */; };
 		EEBA4333293A6205008ADE35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA4332293A6205008ADE35 /* SceneDelegate.swift */; };
 		EEBA4335293A6205008ADE35 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA4334293A6205008ADE35 /* MoviesViewController.swift */; };
 		EEBA4338293A6205008ADE35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBA4336293A6205008ADE35 /* Main.storyboard */; };
 		EEBA433A293A6208008ADE35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEBA4339293A6208008ADE35 /* Assets.xcassets */; };
 		EEBA433D293A6208008ADE35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBA433B293A6208008ADE35 /* LaunchScreen.storyboard */; };
-		EEBA4348293A624E008ADE35 /* MidiasMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA4347293A624E008ADE35 /* MidiasMovies.swift */; };
+		EEBA4348293A624E008ADE35 /* MoviesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA4347293A624E008ADE35 /* MoviesList.swift */; };
 		EEBA434A293A631B008ADE35 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA4349293A631B008ADE35 /* Movie.swift */; };
-		EEBA434C293A6543008ADE35 /* MidiasBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA434B293A6543008ADE35 /* MidiasBrain.swift */; };
+		EEBA434C293A6543008ADE35 /* MoviesBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA434B293A6543008ADE35 /* MoviesBrain.swift */; };
 		EEBA434E293A6625008ADE35 /* MidiaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA434D293A6625008ADE35 /* MidiaType.swift */; };
-		EEBA4350293A7FB3008ADE35 /* CellSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA434F293A7FB3008ADE35 /* CellSetup.swift */; };
+		EEBA4350293A7FB3008ADE35 /* CellSetupMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA434F293A7FB3008ADE35 /* CellSetupMovies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EEAD40D3293D8CC700D0ABCA /* TvShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowViewController.swift; sourceTree = "<group>"; };
 		EEAD40DD293E618E00D0ABCA /* TvShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShow.swift; sourceTree = "<group>"; };
-		EEAD40DF293E620000D0ABCA /* MidiasTv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiasTv.swift; sourceTree = "<group>"; };
+		EEAD40DF293E620000D0ABCA /* TvShowList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowList.swift; sourceTree = "<group>"; };
+		EEAD40E1293E6B0A00D0ABCA /* CellSetupTvShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetupTvShow.swift; sourceTree = "<group>"; };
+		EEAD40E3293E6D4A00D0ABCA /* TvShowBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowBrain.swift; sourceTree = "<group>"; };
 		EEBA432D293A6205008ADE35 /* Movie-Trending-Week.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie-Trending-Week.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEBA4330293A6205008ADE35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEBA4332293A6205008ADE35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,11 +39,11 @@
 		EEBA4339293A6208008ADE35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEBA433C293A6208008ADE35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEBA433E293A6208008ADE35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EEBA4347293A624E008ADE35 /* MidiasMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiasMovies.swift; sourceTree = "<group>"; };
+		EEBA4347293A624E008ADE35 /* MoviesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesList.swift; sourceTree = "<group>"; };
 		EEBA4349293A631B008ADE35 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		EEBA434B293A6543008ADE35 /* MidiasBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiasBrain.swift; sourceTree = "<group>"; };
+		EEBA434B293A6543008ADE35 /* MoviesBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesBrain.swift; sourceTree = "<group>"; };
 		EEBA434D293A6625008ADE35 /* MidiaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiaType.swift; sourceTree = "<group>"; };
-		EEBA434F293A7FB3008ADE35 /* CellSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetup.swift; sourceTree = "<group>"; };
+		EEBA434F293A7FB3008ADE35 /* CellSetupMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetupMovies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				EEBA4336293A6205008ADE35 /* Main.storyboard */,
-				EEBA434F293A7FB3008ADE35 /* CellSetup.swift */,
+				EEBA434F293A7FB3008ADE35 /* CellSetupMovies.swift */,
+				EEAD40E1293E6B0A00D0ABCA /* CellSetupTvShow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -105,10 +110,11 @@
 		EEBA4346293A6224008ADE35 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EEBA434B293A6543008ADE35 /* MidiasBrain.swift */,
-				EEBA4347293A624E008ADE35 /* MidiasMovies.swift */,
-				EEAD40DF293E620000D0ABCA /* MidiasTv.swift */,
+				EEBA434B293A6543008ADE35 /* MoviesBrain.swift */,
+				EEBA4347293A624E008ADE35 /* MoviesList.swift */,
 				EEBA4349293A631B008ADE35 /* Movie.swift */,
+				EEAD40E3293E6D4A00D0ABCA /* TvShowBrain.swift */,
+				EEAD40DF293E620000D0ABCA /* TvShowList.swift */,
 				EEAD40DD293E618E00D0ABCA /* TvShow.swift */,
 				EEBA434D293A6625008ADE35 /* MidiaType.swift */,
 			);
@@ -190,13 +196,15 @@
 				EEBA4335293A6205008ADE35 /* MoviesViewController.swift in Sources */,
 				EEAD40DE293E618E00D0ABCA /* TvShow.swift in Sources */,
 				EEBA4331293A6205008ADE35 /* AppDelegate.swift in Sources */,
-				EEBA4348293A624E008ADE35 /* MidiasMovies.swift in Sources */,
-				EEBA4350293A7FB3008ADE35 /* CellSetup.swift in Sources */,
+				EEAD40E2293E6B0A00D0ABCA /* CellSetupTvShow.swift in Sources */,
+				EEBA4348293A624E008ADE35 /* MoviesList.swift in Sources */,
+				EEBA4350293A7FB3008ADE35 /* CellSetupMovies.swift in Sources */,
 				EEBA4333293A6205008ADE35 /* SceneDelegate.swift in Sources */,
 				EEBA434E293A6625008ADE35 /* MidiaType.swift in Sources */,
-				EEAD40E0293E620000D0ABCA /* MidiasTv.swift in Sources */,
+				EEAD40E0293E620000D0ABCA /* TvShowList.swift in Sources */,
+				EEAD40E4293E6D4A00D0ABCA /* TvShowBrain.swift in Sources */,
 				EEBA434A293A631B008ADE35 /* Movie.swift in Sources */,
-				EEBA434C293A6543008ADE35 /* MidiasBrain.swift in Sources */,
+				EEBA434C293A6543008ADE35 /* MoviesBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MidiasMovies: Codable {
+struct MoviesList: Codable {
     let moviesList: [Movie]
     
     enum CodingKeys: String, CodingKey {
