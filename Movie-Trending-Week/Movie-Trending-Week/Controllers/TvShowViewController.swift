@@ -11,13 +11,13 @@ class TvShowViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var midias = TvShowBrain()
+    var midias = MidiasBrain()
     var tvShow: TvShowList?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        midias.delegate = self
+        midias.tvShowDelegate = self
         midias.apiRequest(midiaType: .tv)
         
         tableView.dataSource = self

@@ -11,13 +11,13 @@ class MoviesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var midias = MoviesBrain()
+    var midias = MidiasBrain()
     var movies: MoviesList?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        midias.delegate = self
+        midias.movieDelegate = self
         midias.apiRequest(midiaType: .movie)
         
         tableView.dataSource = self
