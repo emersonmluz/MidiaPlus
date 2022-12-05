@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MoviesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: MidiaDelegate {
+extension MoviesViewController: MidiaDelegate {
     func midiaTransferSuccess(midia: Midias) {
         DispatchQueue.main.async {
             self.movies = midia
@@ -41,7 +41,7 @@ extension ViewController: MidiaDelegate {
     
 }
 
-extension ViewController: UITableViewDataSource {
+extension MoviesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies?.moviesList.count ?? 0
     }
