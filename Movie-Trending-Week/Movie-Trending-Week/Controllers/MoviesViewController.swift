@@ -12,7 +12,7 @@ class MoviesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var midias = MidiasBrain()
-    var movies: Midias?
+    var movies: MidiasMovies?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class MoviesViewController: UIViewController {
 }
 
 extension MoviesViewController: MidiaDelegate {
-    func midiaTransferSuccess(midia: Midias) {
+    func midiaTransferSuccess(midia: MidiasMovies) {
         DispatchQueue.main.async {
             self.movies = midia
             self.tableView.reloadData()

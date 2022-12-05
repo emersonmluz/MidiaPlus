@@ -8,7 +8,7 @@
 import Foundation
 
 protocol MidiaDelegate {
-    func midiaTransferSuccess (midia: Midias)
+    func midiaTransferSuccess (midia: MidiasMovies)
     func midiaTransferFailed ()
 }
 
@@ -41,7 +41,7 @@ struct MidiasBrain {
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .formatted(dateFormat)
                 
-                let midias = try decoder.decode(Midias.self, from: data!)
+                let midias = try decoder.decode(MidiasMovies.self, from: data!)
                 
                 delegate?.midiaTransferSuccess(midia: midias)
             
