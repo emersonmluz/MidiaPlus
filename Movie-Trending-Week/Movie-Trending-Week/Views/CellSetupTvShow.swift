@@ -25,9 +25,9 @@ class CellSetupTvShow: UITableViewCell {
         dateFormat.dateFormat = "dd-MM-yyyy"
         
         posterImageView.loadFrom(URLAddress: midia.posterPath)
-        tvShowNameLabel.text = midia.title
+        tvShowNameLabel.text = midia.name
         
-        releaseDateLabel.text = dateFormat.string(from: midia.releaseDate)
+        releaseDateLabel.text = dateFormat.string(from: midia.firstAirDate)
         calendarImageView.image = UIImage(systemName: "calendar.circle")
         calendarImageView.tintColor = UIColor.red
         

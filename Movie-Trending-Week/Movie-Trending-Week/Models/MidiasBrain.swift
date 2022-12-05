@@ -46,7 +46,7 @@ struct MidiasBrain {
         task.resume()
     }
     
-    func apiDecoderMovie(data: Data) {
+    private func apiDecoderMovie(data: Data) {
         do {
             let dateFormat = DateFormatter()
             dateFormat.dateFormat = "yyyy-MM-dd"
@@ -64,7 +64,7 @@ struct MidiasBrain {
         }
     }
     
-    func apiDecoderTvShow (data: Data) {
+    private func apiDecoderTvShow (data: Data) {
         do {
             let dateFormat = DateFormatter()
             dateFormat.dateFormat = "yyyy-MM-dd"
