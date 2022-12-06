@@ -12,7 +12,7 @@ struct Person: Codable {
     let name: String
     let popularity: Double
     let office: String
-    let profilePath: String
+    let profilePath: String?
     let actuations: [Actuations]
     
     enum CodingKeys: String, CodingKey {

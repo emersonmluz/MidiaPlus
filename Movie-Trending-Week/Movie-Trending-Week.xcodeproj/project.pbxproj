@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE80ECF1293EBA64001EE8FB /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF0293EBA64001EE8FB /* PeopleViewController.swift */; };
-		EE80ECF3293EBB33001EE8FB /* CellSetupPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF2293EBB33001EE8FB /* CellSetupPeople.swift */; };
+		EE80ECF1293EBA64001EE8FB /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF0293EBA64001EE8FB /* PersonViewController.swift */; };
+		EE80ECF3293EBB33001EE8FB /* CellSetupPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF2293EBB33001EE8FB /* CellSetupPerson.swift */; };
 		EE80ECF5293EBC88001EE8FB /* PersonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF4293EBC88001EE8FB /* PersonList.swift */; };
 		EE80ECF7293EBCDB001EE8FB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF6293EBCDB001EE8FB /* Person.swift */; };
 		EE80ECF9293EBF91001EE8FB /* Actuations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF8293EBF91001EE8FB /* Actuations.swift */; };
@@ -30,8 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EE80ECF0293EBA64001EE8FB /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
-		EE80ECF2293EBB33001EE8FB /* CellSetupPeople.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetupPeople.swift; sourceTree = "<group>"; };
+		EE80ECF0293EBA64001EE8FB /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		EE80ECF2293EBB33001EE8FB /* CellSetupPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetupPerson.swift; sourceTree = "<group>"; };
 		EE80ECF4293EBC88001EE8FB /* PersonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonList.swift; sourceTree = "<group>"; };
 		EE80ECF6293EBCDB001EE8FB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		EE80ECF8293EBF91001EE8FB /* Actuations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actuations.swift; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 			children = (
 				EEBA4334293A6205008ADE35 /* MoviesViewController.swift */,
 				EEAD40D3293D8CC700D0ABCA /* TvShowViewController.swift */,
-				EE80ECF0293EBA64001EE8FB /* PeopleViewController.swift */,
+				EE80ECF0293EBA64001EE8FB /* PersonViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -112,7 +112,7 @@
 				EEBA4336293A6205008ADE35 /* Main.storyboard */,
 				EEBA434F293A7FB3008ADE35 /* CellSetupMovies.swift */,
 				EEAD40E1293E6B0A00D0ABCA /* CellSetupTvShow.swift */,
-				EE80ECF2293EBB33001EE8FB /* CellSetupPeople.swift */,
+				EE80ECF2293EBB33001EE8FB /* CellSetupPerson.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE80ECF3293EBB33001EE8FB /* CellSetupPeople.swift in Sources */,
+				EE80ECF3293EBB33001EE8FB /* CellSetupPerson.swift in Sources */,
 				EEAD40D4293D8CC700D0ABCA /* TvShowViewController.swift in Sources */,
 				EEBA4335293A6205008ADE35 /* MoviesViewController.swift in Sources */,
 				EEAD40DE293E618E00D0ABCA /* TvShow.swift in Sources */,
@@ -212,7 +212,7 @@
 				EE80ECF9293EBF91001EE8FB /* Actuations.swift in Sources */,
 				EEAD40E2293E6B0A00D0ABCA /* CellSetupTvShow.swift in Sources */,
 				EEBA4348293A624E008ADE35 /* MoviesList.swift in Sources */,
-				EE80ECF1293EBA64001EE8FB /* PeopleViewController.swift in Sources */,
+				EE80ECF1293EBA64001EE8FB /* PersonViewController.swift in Sources */,
 				EEBA4350293A7FB3008ADE35 /* CellSetupMovies.swift in Sources */,
 				EEBA4333293A6205008ADE35 /* SceneDelegate.swift in Sources */,
 				EEBA434E293A6625008ADE35 /* MidiaType.swift in Sources */,

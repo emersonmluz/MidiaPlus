@@ -17,9 +17,15 @@ protocol TvShowDelegate {
     func tvShowTransferFailed ()
 }
 
+protocol PersonDelegate {
+    func personTransferSuccess (person: PersonList)
+    func personTransferFailed ()
+}
+
 struct MidiasBrain {
     var movieDelegate: MoviesDelegate?
     var tvShowDelegate: TvShowDelegate?
+    var personDelegate: PersonDelegate?
     
     func apiRequest (midiaType: MidiaType) {
         let url = URL(string: "https://api.themoviedb.org/3/trending/\(midiaType)/week?api_key=d8ab08a45dfeb6ee6317a10b502a476a")
@@ -38,8 +44,10 @@ struct MidiasBrain {
             
             if midiaType == .movie {
                 apiDecoderMovie(data: data!)
-            } else {
+            } else if midiaType == .tv {
                 apiDecoderTvShow(data: data!)
+            } else {
+                apiDecoderPerson(data: data!)
             }
             
         }
@@ -78,6 +86,25 @@ struct MidiasBrain {
         
         } catch {
             tvShowDelegate?.tvShowTransferFailed()
+            return
+        }
+    }
+    
+    private func apiDecoderPerson (data: Data) {
+        do {
+            let dateFormat = DateFormatter()
+            dateFormat.dateFormat = "yyyy-MM-dd"
+            
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .formatted(dateFormat)
+            
+            let midias = try decoder.decode(PersonList.self, from: data)
+            
+            personDelegate?.personTransferSuccess(person: midias)
+            
+        } catch let error {
+            print(error)
+            //personDelegate?.personTransferFailed()
             return
         }
     }

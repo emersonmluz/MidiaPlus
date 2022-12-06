@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CellSetupPeople: UITableViewCell {
+class CellSetupPerson: UITableViewCell {
     
     @IBOutlet weak var peopleImageView: UIImageView!
     @IBOutlet weak var peopleNameLabel: UILabel!
@@ -15,4 +15,11 @@ class CellSetupPeople: UITableViewCell {
     @IBOutlet weak var officeLabel: UILabel!
     @IBOutlet weak var popularityImageView: UIImageView!
     @IBOutlet weak var popularityLabel: UILabel!
+    
+    func loadCell (midia: Person) {
+        peopleImageView.loadFrom(URLAddress: midia.profilePath ?? "")
+        peopleNameLabel.text = midia.name
+        officeLabel.text = midia.office
+        popularityLabel.text = String(midia.popularity)
+    }
 }
