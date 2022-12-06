@@ -21,7 +21,18 @@ class PersonViewController: UIViewController {
         midias.apiRequest(midiaType: .person)
         
         tableView.dataSource = self
+        tableView.delegate = self
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func arrowButton(_ sender: UIButton) {
+        startKnowForScreen()
+    }
+    
+    func startKnowForScreen () {
+        let knowForViewController = storyboard?.instantiateViewController(withIdentifier: "KnowFor") as! KnowForViewController
+        
+        self.navigationController?.pushViewController(knowForViewController, animated: true)
     }
 
 }
@@ -51,6 +62,12 @@ extension PersonViewController: PersonDelegate {
     func personTransferFailed() {
         print("erro")
     }
-    
-    
+}
+
+extension PersonViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        startKnowForScreen()
+    }
 }
