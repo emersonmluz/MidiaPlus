@@ -10,6 +10,8 @@ import UIKit
 class PersonViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
     
     var midias = MidiasBrain()
     var person: PersonList?
@@ -17,6 +19,10 @@ class PersonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        loadingView.alpha = 0.5
+        
+        LoadingScreen.startLoading(loadingActivity: loadingActivityIndicator, loadingView: loadingView)
+        
         midias.personDelegate = self
         midias.apiRequest(midiaType: .person)
         
@@ -58,6 +64,7 @@ extension PersonViewController: PersonDelegate {
         DispatchQueue.main.async {
             self.person = person
             self.tableView.reloadData()
+            LoadingScreen.stopLoading(loadingActivity: self.loadingActivityIndicator, loadingView: self.loadingView)
         }
     }
     

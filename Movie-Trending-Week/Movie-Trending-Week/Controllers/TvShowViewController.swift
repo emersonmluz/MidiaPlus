@@ -10,6 +10,8 @@ import UIKit
 class TvShowViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
     
     var midias = MidiasBrain()
     var tvShow: TvShowList?
@@ -17,6 +19,10 @@ class TvShowViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        loadingView.alpha = 0.5
+        
+        LoadingScreen.startLoading(loadingActivity: loadingActivityIndicator, loadingView: loadingView)
+        
         midias.tvShowDelegate = self
         midias.apiRequest(midiaType: .tv)
         
@@ -47,6 +53,7 @@ extension TvShowViewController: TvShowDelegate {
         DispatchQueue.main.async {
             self.tvShow = tvShow
             self.tableView.reloadData()
+            LoadingScreen.stopLoading(loadingActivity: self.loadingActivityIndicator, loadingView: self.loadingView)
         }
     }
     

@@ -136,18 +136,38 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view hidden="YES" alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEQ-XA-qoY" userLabel="loadingView">
+                                <rect key="frame" x="0.0" y="44" width="320" height="475"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="gth-xw-iKy">
+                                        <rect key="frame" x="141.5" y="219" width="37" height="37"/>
+                                        <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gth-xw-iKy" firstAttribute="centerY" secondItem="NEQ-XA-qoY" secondAttribute="centerY" id="37P-sR-FgU"/>
+                                    <constraint firstItem="gth-xw-iKy" firstAttribute="centerX" secondItem="NEQ-XA-qoY" secondAttribute="centerX" id="C66-S7-wrP"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Vw-tC-q8W" secondAttribute="bottom" id="Bbo-Yx-cv0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Vw-tC-q8W" secondAttribute="trailing" id="Vyb-Kr-0qy"/>
+                            <constraint firstItem="NEQ-XA-qoY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Zmb-Oi-7th"/>
                             <constraint firstItem="9Vw-tC-q8W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Zxo-KD-gJJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NEQ-XA-qoY" secondAttribute="bottom" id="ah2-Fi-bFY"/>
                             <constraint firstItem="9Vw-tC-q8W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fVY-6r-BR5"/>
+                            <constraint firstItem="NEQ-XA-qoY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gVg-Qs-FMw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NEQ-XA-qoY" secondAttribute="trailing" id="xun-C2-R36"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Movies" largeTitleDisplayMode="always" id="b1k-8r-FSs"/>
                     <connections>
+                        <outlet property="loadingActivityIndicator" destination="gth-xw-iKy" id="ij2-b3-GJF"/>
+                        <outlet property="loadingView" destination="NEQ-XA-qoY" id="sph-cg-aHm"/>
                         <outlet property="tableView" destination="9Vw-tC-q8W" id="73k-Wr-gzJ"/>
                     </connections>
                 </viewController>
@@ -283,18 +303,38 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSm-ZA-o8I" userLabel="loadingView">
+                                <rect key="frame" x="0.0" y="44" width="320" height="475"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="tO9-a1-4lW">
+                                        <rect key="frame" x="141.5" y="219" width="37" height="37"/>
+                                        <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="tO9-a1-4lW" firstAttribute="centerY" secondItem="SSm-ZA-o8I" secondAttribute="centerY" id="Wyi-VO-k8I"/>
+                                    <constraint firstItem="tO9-a1-4lW" firstAttribute="centerX" secondItem="SSm-ZA-o8I" secondAttribute="centerX" id="fxR-J5-hTf"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UgA-Qg-uey"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="UgA-Qg-uey" firstAttribute="bottom" secondItem="SSm-ZA-o8I" secondAttribute="bottom" id="MnP-m7-JwV"/>
                             <constraint firstItem="MOs-Kj-VHk" firstAttribute="top" secondItem="UgA-Qg-uey" secondAttribute="top" id="b8m-lz-1dy"/>
+                            <constraint firstItem="SSm-ZA-o8I" firstAttribute="leading" secondItem="UgA-Qg-uey" secondAttribute="leading" id="blJ-yY-aKy"/>
                             <constraint firstItem="MOs-Kj-VHk" firstAttribute="leading" secondItem="UgA-Qg-uey" secondAttribute="leading" id="e9e-Lg-J7w"/>
                             <constraint firstItem="UgA-Qg-uey" firstAttribute="bottom" secondItem="MOs-Kj-VHk" secondAttribute="bottom" id="jdt-1S-hWD"/>
+                            <constraint firstItem="UgA-Qg-uey" firstAttribute="trailing" secondItem="SSm-ZA-o8I" secondAttribute="trailing" id="tJh-mw-Od2"/>
                             <constraint firstItem="UgA-Qg-uey" firstAttribute="trailing" secondItem="MOs-Kj-VHk" secondAttribute="trailing" id="taK-X0-y6P"/>
+                            <constraint firstItem="SSm-ZA-o8I" firstAttribute="top" secondItem="UgA-Qg-uey" secondAttribute="top" id="vum-s8-Iho"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tv Show" largeTitleDisplayMode="always" id="4nq-iz-A7N"/>
                     <connections>
+                        <outlet property="loadingActivityIndicator" destination="tO9-a1-4lW" id="vvT-Rh-hx5"/>
+                        <outlet property="loadingView" destination="SSm-ZA-o8I" id="sHJ-Xd-rnq"/>
                         <outlet property="tableView" destination="MOs-Kj-VHk" id="pjW-Tf-862"/>
                     </connections>
                 </viewController>
@@ -419,18 +459,38 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oWu-aA-OKh" userLabel="loadingView">
+                                <rect key="frame" x="0.0" y="44" width="320" height="475"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="mL0-5h-0Mx">
+                                        <rect key="frame" x="141.5" y="219" width="37" height="37"/>
+                                        <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="mL0-5h-0Mx" firstAttribute="centerX" secondItem="oWu-aA-OKh" secondAttribute="centerX" id="fO5-Xu-ato"/>
+                                    <constraint firstItem="mL0-5h-0Mx" firstAttribute="centerY" secondItem="oWu-aA-OKh" secondAttribute="centerY" id="zwq-K0-sxl"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OX6-hy-BfH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="oWu-aA-OKh" firstAttribute="leading" secondItem="OX6-hy-BfH" secondAttribute="leading" id="2AI-Ij-UV9"/>
                             <constraint firstItem="OX6-hy-BfH" firstAttribute="bottom" secondItem="UhP-yI-SEC" secondAttribute="bottom" id="8Rd-AH-Do4"/>
                             <constraint firstItem="OX6-hy-BfH" firstAttribute="trailing" secondItem="UhP-yI-SEC" secondAttribute="trailing" id="C77-Wm-YIj"/>
+                            <constraint firstItem="OX6-hy-BfH" firstAttribute="trailing" secondItem="oWu-aA-OKh" secondAttribute="trailing" id="EE5-KP-PvZ"/>
                             <constraint firstItem="UhP-yI-SEC" firstAttribute="top" secondItem="OX6-hy-BfH" secondAttribute="top" id="Y89-mI-foV"/>
                             <constraint firstItem="UhP-yI-SEC" firstAttribute="leading" secondItem="OX6-hy-BfH" secondAttribute="leading" id="iz7-39-HSs"/>
+                            <constraint firstItem="OX6-hy-BfH" firstAttribute="bottom" secondItem="oWu-aA-OKh" secondAttribute="bottom" id="n88-Uf-KPD"/>
+                            <constraint firstItem="oWu-aA-OKh" firstAttribute="top" secondItem="OX6-hy-BfH" secondAttribute="top" id="y1z-4b-5WA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="People" largeTitleDisplayMode="always" id="qxG-Xc-CQb"/>
                     <connections>
+                        <outlet property="loadingActivityIndicator" destination="mL0-5h-0Mx" id="dfH-dg-cNd"/>
+                        <outlet property="loadingView" destination="oWu-aA-OKh" id="TJn-MP-Ovh"/>
                         <outlet property="tableView" destination="UhP-yI-SEC" id="Ugw-hL-EJF"/>
                     </connections>
                 </viewController>
@@ -447,7 +507,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ygh-66-Z8n">
-                                <rect key="frame" x="0.0" y="92.5" width="320" height="475.5"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="z8H-qD-bjC" customClass="CellSetupKnowFor" customModule="Movie_Trending_Week" customModuleProvider="target">
@@ -574,18 +634,38 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m1W-xz-JZL">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="0Xt-OG-grD">
+                                        <rect key="frame" x="141.5" y="243.5" width="37" height="37"/>
+                                        <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="0Xt-OG-grD" firstAttribute="centerY" secondItem="m1W-xz-JZL" secondAttribute="centerY" id="Z8T-Jg-HrL"/>
+                                    <constraint firstItem="0Xt-OG-grD" firstAttribute="centerX" secondItem="m1W-xz-JZL" secondAttribute="centerX" id="qp3-YJ-YyS"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Tl-Sd-tOz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="7Tl-Sd-tOz" firstAttribute="trailing" secondItem="m1W-xz-JZL" secondAttribute="trailing" id="9NO-Og-Mpu"/>
+                            <constraint firstItem="m1W-xz-JZL" firstAttribute="top" secondItem="7Tl-Sd-tOz" secondAttribute="top" id="FkV-iS-dpn"/>
                             <constraint firstItem="ygh-66-Z8n" firstAttribute="leading" secondItem="7Tl-Sd-tOz" secondAttribute="leading" id="K5S-bA-JIQ"/>
+                            <constraint firstItem="7Tl-Sd-tOz" firstAttribute="bottom" secondItem="m1W-xz-JZL" secondAttribute="bottom" id="cez-OV-mA2"/>
                             <constraint firstItem="7Tl-Sd-tOz" firstAttribute="bottom" secondItem="ygh-66-Z8n" secondAttribute="bottom" id="glj-cI-RCB"/>
+                            <constraint firstItem="m1W-xz-JZL" firstAttribute="leading" secondItem="7Tl-Sd-tOz" secondAttribute="leading" id="iuB-6G-7dQ"/>
                             <constraint firstItem="ygh-66-Z8n" firstAttribute="top" secondItem="7Tl-Sd-tOz" secondAttribute="top" id="sY6-yZ-qJj"/>
                             <constraint firstItem="7Tl-Sd-tOz" firstAttribute="trailing" secondItem="ygh-66-Z8n" secondAttribute="trailing" id="yaC-qr-Ji2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Know For" largeTitleDisplayMode="always" id="e8E-0L-jdC"/>
                     <connections>
+                        <outlet property="loadingActivityIndicator" destination="0Xt-OG-grD" id="7eP-c1-KqG"/>
+                        <outlet property="loadingView" destination="m1W-xz-JZL" id="DwB-u8-08S"/>
                         <outlet property="tableView" destination="ygh-66-Z8n" id="Y2n-Ba-t2L"/>
                     </connections>
                 </viewController>

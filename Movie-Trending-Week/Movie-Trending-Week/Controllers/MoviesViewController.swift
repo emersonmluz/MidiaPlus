@@ -10,12 +10,18 @@ import UIKit
 class MoviesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
     
     var midias = MidiasBrain()
     var movies: MoviesList?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadingView.alpha = 0.5
+        
+        LoadingScreen.startLoading(loadingActivity: loadingActivityIndicator, loadingView: loadingView)
         
         midias.movieDelegate = self
         midias.apiRequest(midiaType: .movie)
@@ -24,8 +30,7 @@ class MoviesViewController: UIViewController {
         tableView.delegate = self
         // Do any additional setup after loading the view.
     }
-
-
+    
 }
 
 extension MoviesViewController: MoviesDelegate {
@@ -33,6 +38,7 @@ extension MoviesViewController: MoviesDelegate {
         DispatchQueue.main.async {
             self.movies = movies
             self.tableView.reloadData()
+           LoadingScreen.stopLoading(loadingActivity: self.loadingActivityIndicator, loadingView: self.loadingView)
         }
     }
     
