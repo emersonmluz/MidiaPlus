@@ -144,7 +144,7 @@
                                         <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </activityIndicatorView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="gth-xw-iKy" firstAttribute="centerY" secondItem="NEQ-XA-qoY" secondAttribute="centerY" id="37P-sR-FgU"/>
                                     <constraint firstItem="gth-xw-iKy" firstAttribute="centerX" secondItem="NEQ-XA-qoY" secondAttribute="centerX" id="C66-S7-wrP"/>
@@ -311,7 +311,7 @@
                                         <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </activityIndicatorView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="tO9-a1-4lW" firstAttribute="centerY" secondItem="SSm-ZA-o8I" secondAttribute="centerY" id="Wyi-VO-k8I"/>
                                     <constraint firstItem="tO9-a1-4lW" firstAttribute="centerX" secondItem="SSm-ZA-o8I" secondAttribute="centerX" id="fxR-J5-hTf"/>
@@ -467,7 +467,7 @@
                                         <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </activityIndicatorView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="mL0-5h-0Mx" firstAttribute="centerX" secondItem="oWu-aA-OKh" secondAttribute="centerX" id="fO5-Xu-ato"/>
                                     <constraint firstItem="mL0-5h-0Mx" firstAttribute="centerY" secondItem="oWu-aA-OKh" secondAttribute="centerY" id="zwq-K0-sxl"/>
@@ -703,7 +703,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="bMb-hs-vWD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

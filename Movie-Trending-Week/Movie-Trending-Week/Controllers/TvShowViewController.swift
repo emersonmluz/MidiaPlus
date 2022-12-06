@@ -18,8 +18,6 @@ class TvShowViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        loadingView.alpha = 0.5
         
         LoadingScreen.startLoading(loadingActivity: loadingActivityIndicator, loadingView: loadingView)
         
