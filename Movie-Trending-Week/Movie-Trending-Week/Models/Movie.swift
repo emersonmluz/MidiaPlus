@@ -14,7 +14,7 @@ struct Movie: Codable {
     let posterPath: String
     let popularity: Double
     let releaseDate: Date
-    let averageValueVote: Float
+    let averageValueVote: Double
     let voteTotal: Int
     
     enum CodingKeys: String, CodingKey {

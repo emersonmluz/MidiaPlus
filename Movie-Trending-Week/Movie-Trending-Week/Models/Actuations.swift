@@ -16,7 +16,7 @@ struct Actuations: Codable {
     let popularity: Double
     let releaseDate: Date?
     let firstAirDate: Date?
-    let averageValueVote: Float
+    let averageValueVote: Double
     let voteTotal: Int
     
     enum CodingKeys: String, CodingKey {
