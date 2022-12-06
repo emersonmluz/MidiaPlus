@@ -21,6 +21,7 @@ class TvShowViewController: UIViewController {
         midias.apiRequest(midiaType: .tv)
         
         tableView.dataSource = self
+        tableView.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -54,4 +55,10 @@ extension TvShowViewController: TvShowDelegate {
     }
     
     
+}
+
+extension TvShowViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }

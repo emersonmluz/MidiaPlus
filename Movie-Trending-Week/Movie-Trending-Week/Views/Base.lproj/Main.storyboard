@@ -228,7 +228,6 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstItem="a0F-l0-40h" firstAttribute="centerY" secondItem="kjk-mj-2uo" secondAttribute="centerY" id="33T-1F-4xf"/>
                                                         <constraint firstItem="UV8-GC-R39" firstAttribute="centerY" secondItem="kjk-mj-2uo" secondAttribute="centerY" id="BOO-ab-wke"/>

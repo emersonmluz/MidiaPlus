@@ -21,6 +21,7 @@ class MoviesViewController: UIViewController {
         midias.apiRequest(midiaType: .movie)
         
         tableView.dataSource = self
+        tableView.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -52,6 +53,12 @@ extension MoviesViewController: UITableViewDataSource {
         cell.loadCell(midia: movies!.moviesList[indexPath.row])
         
         return cell
+    }
+}
+
+extension MoviesViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
