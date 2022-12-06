@@ -70,6 +70,8 @@ extension PersonViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
+        guard person?.personList[indexPath.row].profilePath != nil else {return}
+        
         let knowForViewController = storyboard?.instantiateViewController(withIdentifier: "KnowFor") as! KnowForViewController
         
         knowForViewController.person = person?.personList[indexPath.row]

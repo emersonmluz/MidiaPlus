@@ -19,6 +19,7 @@ class CellSetupPerson: UITableViewCell {
     
     func loadCell (midia: Person) {
         peopleImageView.loadFrom(URLAddress: midia.profilePath ?? "")
+
         peopleNameLabel.text = midia.name
         officeLabel.text = midia.office
         popularityLabel.text = String(midia.popularity)
