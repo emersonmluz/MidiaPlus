@@ -32,6 +32,8 @@ class PersonViewController: UIViewController {
     func startKnowForScreen () {
         let knowForViewController = storyboard?.instantiateViewController(withIdentifier: "KnowFor") as! KnowForViewController
         
+        //knowForViewController.person = person
+        
         self.navigationController?.pushViewController(knowForViewController, animated: true)
     }
 
@@ -68,6 +70,10 @@ extension PersonViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        startKnowForScreen()
+        let knowForViewController = storyboard?.instantiateViewController(withIdentifier: "KnowFor") as! KnowForViewController
+        
+        knowForViewController.person = person?.personList[indexPath.row]
+        
+        self.navigationController?.pushViewController(knowForViewController, animated: true)
     }
 }

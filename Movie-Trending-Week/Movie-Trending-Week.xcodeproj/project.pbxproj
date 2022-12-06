@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EE3D2861293FA2F1002A6B73 /* KnowForViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3D2860293FA2F1002A6B73 /* KnowForViewController.swift */; };
+		EE3D2863293FAFA9002A6B73 /* CellSetupKnowFor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3D2862293FAFA9002A6B73 /* CellSetupKnowFor.swift */; };
 		EE80ECF1293EBA64001EE8FB /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF0293EBA64001EE8FB /* PersonViewController.swift */; };
 		EE80ECF3293EBB33001EE8FB /* CellSetupPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF2293EBB33001EE8FB /* CellSetupPerson.swift */; };
 		EE80ECF5293EBC88001EE8FB /* PersonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF4293EBC88001EE8FB /* PersonList.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		EE3D2860293FA2F1002A6B73 /* KnowForViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowForViewController.swift; sourceTree = "<group>"; };
+		EE3D2862293FAFA9002A6B73 /* CellSetupKnowFor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetupKnowFor.swift; sourceTree = "<group>"; };
 		EE80ECF0293EBA64001EE8FB /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		EE80ECF2293EBB33001EE8FB /* CellSetupPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetupPerson.swift; sourceTree = "<group>"; };
 		EE80ECF4293EBC88001EE8FB /* PersonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonList.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				EEBA434F293A7FB3008ADE35 /* CellSetupMovies.swift */,
 				EEAD40E1293E6B0A00D0ABCA /* CellSetupTvShow.swift */,
 				EE80ECF2293EBB33001EE8FB /* CellSetupPerson.swift */,
+				EE3D2862293FAFA9002A6B73 /* CellSetupKnowFor.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE80ECF3293EBB33001EE8FB /* CellSetupPerson.swift in Sources */,
+				EE3D2863293FAFA9002A6B73 /* CellSetupKnowFor.swift in Sources */,
 				EEAD40D4293D8CC700D0ABCA /* TvShowViewController.swift in Sources */,
 				EEBA4335293A6205008ADE35 /* MoviesViewController.swift in Sources */,
 				EE3D2861293FA2F1002A6B73 /* KnowForViewController.swift in Sources */,
