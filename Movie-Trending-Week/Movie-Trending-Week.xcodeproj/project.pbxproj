@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE3D2861293FA2F1002A6B73 /* KnowForViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3D2860293FA2F1002A6B73 /* KnowForViewController.swift */; };
 		EE80ECF1293EBA64001EE8FB /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF0293EBA64001EE8FB /* PersonViewController.swift */; };
 		EE80ECF3293EBB33001EE8FB /* CellSetupPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF2293EBB33001EE8FB /* CellSetupPerson.swift */; };
 		EE80ECF5293EBC88001EE8FB /* PersonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF4293EBC88001EE8FB /* PersonList.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE3D2860293FA2F1002A6B73 /* KnowForViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowForViewController.swift; sourceTree = "<group>"; };
 		EE80ECF0293EBA64001EE8FB /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		EE80ECF2293EBB33001EE8FB /* CellSetupPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetupPerson.swift; sourceTree = "<group>"; };
 		EE80ECF4293EBC88001EE8FB /* PersonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonList.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				EEBA4334293A6205008ADE35 /* MoviesViewController.swift */,
 				EEAD40D3293D8CC700D0ABCA /* TvShowViewController.swift */,
 				EE80ECF0293EBA64001EE8FB /* PersonViewController.swift */,
+				EE3D2860293FA2F1002A6B73 /* KnowForViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				EE80ECF3293EBB33001EE8FB /* CellSetupPerson.swift in Sources */,
 				EEAD40D4293D8CC700D0ABCA /* TvShowViewController.swift in Sources */,
 				EEBA4335293A6205008ADE35 /* MoviesViewController.swift in Sources */,
+				EE3D2861293FA2F1002A6B73 /* KnowForViewController.swift in Sources */,
 				EEAD40DE293E618E00D0ABCA /* TvShow.swift in Sources */,
 				EEBA4331293A6205008ADE35 /* AppDelegate.swift in Sources */,
 				EE80ECF9293EBF91001EE8FB /* Actuations.swift in Sources */,
