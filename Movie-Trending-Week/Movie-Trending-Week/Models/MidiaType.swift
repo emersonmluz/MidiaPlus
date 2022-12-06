@@ -8,5 +8,5 @@
 import Foundation
 
 enum MidiaType {
-    case movie, tv
+    case movie, tv, person
 }

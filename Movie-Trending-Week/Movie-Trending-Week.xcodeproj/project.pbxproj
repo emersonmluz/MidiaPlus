@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		EE80ECF1293EBA64001EE8FB /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF0293EBA64001EE8FB /* PeopleViewController.swift */; };
 		EE80ECF3293EBB33001EE8FB /* CellSetupPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF2293EBB33001EE8FB /* CellSetupPeople.swift */; };
+		EE80ECF5293EBC88001EE8FB /* PersonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF4293EBC88001EE8FB /* PersonList.swift */; };
+		EE80ECF7293EBCDB001EE8FB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF6293EBCDB001EE8FB /* Person.swift */; };
+		EE80ECF9293EBF91001EE8FB /* Actuations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF8293EBF91001EE8FB /* Actuations.swift */; };
 		EEAD40D4293D8CC700D0ABCA /* TvShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD40D3293D8CC700D0ABCA /* TvShowViewController.swift */; };
 		EEAD40DE293E618E00D0ABCA /* TvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD40DD293E618E00D0ABCA /* TvShow.swift */; };
 		EEAD40E0293E620000D0ABCA /* TvShowList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD40DF293E620000D0ABCA /* TvShowList.swift */; };
@@ -29,6 +32,9 @@
 /* Begin PBXFileReference section */
 		EE80ECF0293EBA64001EE8FB /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		EE80ECF2293EBB33001EE8FB /* CellSetupPeople.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetupPeople.swift; sourceTree = "<group>"; };
+		EE80ECF4293EBC88001EE8FB /* PersonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonList.swift; sourceTree = "<group>"; };
+		EE80ECF6293EBCDB001EE8FB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		EE80ECF8293EBF91001EE8FB /* Actuations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actuations.swift; sourceTree = "<group>"; };
 		EEAD40D3293D8CC700D0ABCA /* TvShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowViewController.swift; sourceTree = "<group>"; };
 		EEAD40DD293E618E00D0ABCA /* TvShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShow.swift; sourceTree = "<group>"; };
 		EEAD40DF293E620000D0ABCA /* TvShowList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowList.swift; sourceTree = "<group>"; };
@@ -119,6 +125,9 @@
 				EEBA4349293A631B008ADE35 /* Movie.swift */,
 				EEAD40DF293E620000D0ABCA /* TvShowList.swift */,
 				EEAD40DD293E618E00D0ABCA /* TvShow.swift */,
+				EE80ECF4293EBC88001EE8FB /* PersonList.swift */,
+				EE80ECF6293EBCDB001EE8FB /* Person.swift */,
+				EE80ECF8293EBF91001EE8FB /* Actuations.swift */,
 				EEBA434D293A6625008ADE35 /* MidiaType.swift */,
 			);
 			path = Models;
@@ -200,6 +209,7 @@
 				EEBA4335293A6205008ADE35 /* MoviesViewController.swift in Sources */,
 				EEAD40DE293E618E00D0ABCA /* TvShow.swift in Sources */,
 				EEBA4331293A6205008ADE35 /* AppDelegate.swift in Sources */,
+				EE80ECF9293EBF91001EE8FB /* Actuations.swift in Sources */,
 				EEAD40E2293E6B0A00D0ABCA /* CellSetupTvShow.swift in Sources */,
 				EEBA4348293A624E008ADE35 /* MoviesList.swift in Sources */,
 				EE80ECF1293EBA64001EE8FB /* PeopleViewController.swift in Sources */,
@@ -208,6 +218,8 @@
 				EEBA434E293A6625008ADE35 /* MidiaType.swift in Sources */,
 				EEAD40E0293E620000D0ABCA /* TvShowList.swift in Sources */,
 				EEBA434A293A631B008ADE35 /* Movie.swift in Sources */,
+				EE80ECF5293EBC88001EE8FB /* PersonList.swift in Sources */,
+				EE80ECF7293EBCDB001EE8FB /* Person.swift in Sources */,
 				EEBA434C293A6543008ADE35 /* MidiasBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
