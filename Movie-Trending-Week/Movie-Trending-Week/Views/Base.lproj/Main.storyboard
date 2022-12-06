@@ -634,38 +634,18 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m1W-xz-JZL">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
-                                <subviews>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="0Xt-OG-grD">
-                                        <rect key="frame" x="141.5" y="243.5" width="37" height="37"/>
-                                        <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </activityIndicatorView>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="0Xt-OG-grD" firstAttribute="centerY" secondItem="m1W-xz-JZL" secondAttribute="centerY" id="Z8T-Jg-HrL"/>
-                                    <constraint firstItem="0Xt-OG-grD" firstAttribute="centerX" secondItem="m1W-xz-JZL" secondAttribute="centerX" id="qp3-YJ-YyS"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Tl-Sd-tOz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7Tl-Sd-tOz" firstAttribute="trailing" secondItem="m1W-xz-JZL" secondAttribute="trailing" id="9NO-Og-Mpu"/>
-                            <constraint firstItem="m1W-xz-JZL" firstAttribute="top" secondItem="7Tl-Sd-tOz" secondAttribute="top" id="FkV-iS-dpn"/>
                             <constraint firstItem="ygh-66-Z8n" firstAttribute="leading" secondItem="7Tl-Sd-tOz" secondAttribute="leading" id="K5S-bA-JIQ"/>
-                            <constraint firstItem="7Tl-Sd-tOz" firstAttribute="bottom" secondItem="m1W-xz-JZL" secondAttribute="bottom" id="cez-OV-mA2"/>
                             <constraint firstItem="7Tl-Sd-tOz" firstAttribute="bottom" secondItem="ygh-66-Z8n" secondAttribute="bottom" id="glj-cI-RCB"/>
-                            <constraint firstItem="m1W-xz-JZL" firstAttribute="leading" secondItem="7Tl-Sd-tOz" secondAttribute="leading" id="iuB-6G-7dQ"/>
                             <constraint firstItem="ygh-66-Z8n" firstAttribute="top" secondItem="7Tl-Sd-tOz" secondAttribute="top" id="sY6-yZ-qJj"/>
                             <constraint firstItem="7Tl-Sd-tOz" firstAttribute="trailing" secondItem="ygh-66-Z8n" secondAttribute="trailing" id="yaC-qr-Ji2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Know For" largeTitleDisplayMode="always" id="e8E-0L-jdC"/>
                     <connections>
-                        <outlet property="loadingActivityIndicator" destination="0Xt-OG-grD" id="7eP-c1-KqG"/>
-                        <outlet property="loadingView" destination="m1W-xz-JZL" id="DwB-u8-08S"/>
                         <outlet property="tableView" destination="ygh-66-Z8n" id="Y2n-Ba-t2L"/>
                     </connections>
                 </viewController>
@@ -723,7 +703,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="bMb-hs-vWD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
