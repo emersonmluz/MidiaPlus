@@ -41,6 +41,7 @@ class CellSetupMovies: UITableViewCell {
         numberOfVotesImageView.tintColor = UIColor.purple
         
         reviewLabel.text = midia.overview
+        
     }
     
 }
