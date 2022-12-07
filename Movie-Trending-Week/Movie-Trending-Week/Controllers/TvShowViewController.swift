@@ -12,7 +12,6 @@ class TvShowViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var failedLabel: UILabel!
     
     var midias = MidiasBrain()
     var tvShow: TvShowList?
@@ -20,10 +19,7 @@ class TvShowViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        LoadingScreen.startLoading(loadingActivity: loadingActivityIndicator, loadingView: loadingView)
-        
         midias.tvShowDelegate = self
-        midias.apiRequest(midiaType: .tv)
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -32,6 +28,10 @@ class TvShowViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         tabBarController?.tabBar.selectedImageTintColor = UIColor.systemPurple
+        
+        LoadingScreen.startLoading(loadingActivity: loadingActivityIndicator, loadingView: loadingView)
+        
+        midias.apiRequest(midiaType: .tv)
     }
 
 }
@@ -61,7 +61,8 @@ extension TvShowViewController: TvShowDelegate {
     
     func tvShowTransferFailed() {
         DispatchQueue.main.async {
-            self.failedLabel.isHidden = false
+            LoadingScreen.stopLoading(loadingActivity: self.loadingActivityIndicator, loadingView: self.loadingView)
+            Alert.alertMessage(view: self)
         }
     }
     

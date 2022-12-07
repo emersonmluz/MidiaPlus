@@ -12,7 +12,6 @@ class PersonViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var failedLabel: UILabel!
     
     var midias = MidiasBrain()
     var person: PersonList?
@@ -20,10 +19,7 @@ class PersonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        LoadingScreen.startLoading(loadingActivity: loadingActivityIndicator, loadingView: loadingView)
-        
         midias.personDelegate = self
-        midias.apiRequest(midiaType: .person)
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -32,6 +28,10 @@ class PersonViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         tabBarController?.tabBar.selectedImageTintColor = UIColor.systemGreen
+        
+        LoadingScreen.startLoading(loadingActivity: loadingActivityIndicator, loadingView: loadingView)
+        
+        midias.apiRequest(midiaType: .person)
     }
 
 }
@@ -61,7 +61,8 @@ extension PersonViewController: PersonDelegate {
     
     func personTransferFailed() {
         DispatchQueue.main.async {
-            self.failedLabel.isHidden = false
+            LoadingScreen.stopLoading(loadingActivity: self.loadingActivityIndicator, loadingView: self.loadingView)
+            Alert.alertMessage(view: self)
         }
     }
 }

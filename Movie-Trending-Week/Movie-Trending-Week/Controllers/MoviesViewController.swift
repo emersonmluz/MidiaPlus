@@ -12,7 +12,6 @@ class MoviesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var failedLabel: UILabel!
     
     var midias = MidiasBrain()
     var movies: MoviesList?
@@ -20,10 +19,7 @@ class MoviesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        LoadingScreen.startLoading(loadingActivity: loadingActivityIndicator, loadingView: loadingView)
-        
         midias.movieDelegate = self
-        midias.apiRequest(midiaType: .movie)
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -32,6 +28,10 @@ class MoviesViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         tabBarController?.tabBar.selectedImageTintColor = UIColor.systemBlue
+        
+        LoadingScreen.startLoading(loadingActivity: loadingActivityIndicator, loadingView: loadingView)
+        
+        midias.apiRequest(midiaType: .movie)
     }
     
 }
@@ -47,7 +47,8 @@ extension MoviesViewController: MoviesDelegate {
     
     func moviesTransferFailed() {
         DispatchQueue.main.async {
-            self.failedLabel.isHidden = false
+            LoadingScreen.stopLoading(loadingActivity: self.loadingActivityIndicator, loadingView: self.loadingView)
+            Alert.alertMessage(view: self)
         }
     }
     

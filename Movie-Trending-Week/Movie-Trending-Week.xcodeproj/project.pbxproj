@@ -10,6 +10,7 @@
 		EE3D2861293FA2F1002A6B73 /* KnowForViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3D2860293FA2F1002A6B73 /* KnowForViewController.swift */; };
 		EE3D2863293FAFA9002A6B73 /* CellSetupKnowFor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3D2862293FAFA9002A6B73 /* CellSetupKnowFor.swift */; };
 		EE3D2867293FCD2B002A6B73 /* LoadingScreeen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3D2866293FCD2B002A6B73 /* LoadingScreeen.swift */; };
+		EE3D2869294149B4002A6B73 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3D2868294149B4002A6B73 /* Alert.swift */; };
 		EE80ECF1293EBA64001EE8FB /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF0293EBA64001EE8FB /* PersonViewController.swift */; };
 		EE80ECF3293EBB33001EE8FB /* CellSetupPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF2293EBB33001EE8FB /* CellSetupPerson.swift */; };
 		EE80ECF5293EBC88001EE8FB /* PersonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80ECF4293EBC88001EE8FB /* PersonList.swift */; };
@@ -36,6 +37,7 @@
 		EE3D2860293FA2F1002A6B73 /* KnowForViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowForViewController.swift; sourceTree = "<group>"; };
 		EE3D2862293FAFA9002A6B73 /* CellSetupKnowFor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetupKnowFor.swift; sourceTree = "<group>"; };
 		EE3D2866293FCD2B002A6B73 /* LoadingScreeen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreeen.swift; sourceTree = "<group>"; };
+		EE3D2868294149B4002A6B73 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		EE80ECF0293EBA64001EE8FB /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		EE80ECF2293EBB33001EE8FB /* CellSetupPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetupPerson.swift; sourceTree = "<group>"; };
 		EE80ECF4293EBC88001EE8FB /* PersonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonList.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				EE80ECF2293EBB33001EE8FB /* CellSetupPerson.swift */,
 				EE3D2862293FAFA9002A6B73 /* CellSetupKnowFor.swift */,
 				EE3D2866293FCD2B002A6B73 /* LoadingScreeen.swift */,
+				EE3D2868294149B4002A6B73 /* Alert.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				EEBA4335293A6205008ADE35 /* MoviesViewController.swift in Sources */,
 				EE3D2861293FA2F1002A6B73 /* KnowForViewController.swift in Sources */,
 				EEAD40DE293E618E00D0ABCA /* TvShow.swift in Sources */,
+				EE3D2869294149B4002A6B73 /* Alert.swift in Sources */,
 				EEBA4331293A6205008ADE35 /* AppDelegate.swift in Sources */,
 				EE80ECF9293EBF91001EE8FB /* Actuations.swift in Sources */,
 				EEAD40E2293E6B0A00D0ABCA /* CellSetupTvShow.swift in Sources */,
