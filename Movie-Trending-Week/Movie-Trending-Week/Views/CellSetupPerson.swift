@@ -18,7 +18,12 @@ class CellSetupPerson: UITableViewCell {
     @IBOutlet weak var arrowButton: UIButton!
     
     func loadCell (midia: Person) {
-        peopleImageView.loadFrom(URLAddress: midia.profilePath ?? "")
+        
+        if midia.profilePath != nil {
+            peopleImageView.loadFrom(URLAddress: midia.profilePath!)
+        } else {
+            peopleImageView.image = UIImage(systemName: "person")
+        }
 
         peopleNameLabel.text = midia.name
         officeLabel.text = midia.office
