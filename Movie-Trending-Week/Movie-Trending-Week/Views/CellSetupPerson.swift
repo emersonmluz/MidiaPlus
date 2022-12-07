@@ -15,7 +15,7 @@ class CellSetupPerson: UITableViewCell {
     @IBOutlet weak var officeLabel: UILabel!
     @IBOutlet weak var popularityImageView: UIImageView!
     @IBOutlet weak var popularityLabel: UILabel!
-    @IBOutlet weak var arrowButton: UIButton!
+    @IBOutlet weak var arrowForKnowFor: UIImageView!
     
     func loadCell (midia: Person) {
         
@@ -30,9 +30,9 @@ class CellSetupPerson: UITableViewCell {
         popularityLabel.text = String(midia.popularity)
         
         if midia.actuations.count > 0 {
-            arrowButton.isHidden = false
+            arrowForKnowFor.isHidden = false
         } else {
-            arrowButton.isHidden = true
+            arrowForKnowFor.isHidden = true
         }
     }
 }
