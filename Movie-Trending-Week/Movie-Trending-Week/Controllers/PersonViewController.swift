@@ -29,18 +29,6 @@ class PersonViewController: UIViewController {
         tableView.delegate = self
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func arrowButton(_ sender: UIButton) {
-        startKnowForScreen()
-    }
-    
-    func startKnowForScreen () {
-        let knowForViewController = storyboard?.instantiateViewController(withIdentifier: "KnowFor") as! KnowForViewController
-        
-        //knowForViewController.person = person
-        
-        self.navigationController?.pushViewController(knowForViewController, animated: true)
-    }
 
 }
 
