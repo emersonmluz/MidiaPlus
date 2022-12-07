@@ -29,6 +29,10 @@ class PersonViewController: UIViewController {
         tableView.delegate = self
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        tabBarController?.tabBar.selectedImageTintColor = UIColor.systemGreen
+    }
 
 }
 
