@@ -143,11 +143,20 @@
                                         <rect key="frame" x="141.5" y="219" width="37" height="37"/>
                                         <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </activityIndicatorView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Falha ao buscar informação!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bX-Cw-Fa3">
+                                        <rect key="frame" x="10" y="156.5" width="300" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="gth-xw-iKy" firstAttribute="centerY" secondItem="NEQ-XA-qoY" secondAttribute="centerY" id="37P-sR-FgU"/>
+                                    <constraint firstItem="3bX-Cw-Fa3" firstAttribute="centerY" secondItem="NEQ-XA-qoY" secondAttribute="centerY" constant="-70" id="8va-fb-wFa"/>
                                     <constraint firstItem="gth-xw-iKy" firstAttribute="centerX" secondItem="NEQ-XA-qoY" secondAttribute="centerX" id="C66-S7-wrP"/>
+                                    <constraint firstAttribute="trailing" secondItem="3bX-Cw-Fa3" secondAttribute="trailing" constant="10" id="W8R-pi-RfH"/>
+                                    <constraint firstItem="3bX-Cw-Fa3" firstAttribute="leading" secondItem="NEQ-XA-qoY" secondAttribute="leading" constant="10" id="WjF-Ez-X46"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -166,6 +175,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Movies" largeTitleDisplayMode="always" id="b1k-8r-FSs"/>
                     <connections>
+                        <outlet property="failedLabel" destination="3bX-Cw-Fa3" id="bBI-KW-olF"/>
                         <outlet property="loadingActivityIndicator" destination="gth-xw-iKy" id="ij2-b3-GJF"/>
                         <outlet property="loadingView" destination="NEQ-XA-qoY" id="sph-cg-aHm"/>
                         <outlet property="tableView" destination="9Vw-tC-q8W" id="73k-Wr-gzJ"/>
@@ -306,6 +316,12 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSm-ZA-o8I" userLabel="loadingView">
                                 <rect key="frame" x="0.0" y="44" width="320" height="475"/>
                                 <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Falha ao buscar informação!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1Q-xM-7kn">
+                                        <rect key="frame" x="10" y="156.5" width="300" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="tO9-a1-4lW">
                                         <rect key="frame" x="141.5" y="219" width="37" height="37"/>
                                         <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -313,8 +329,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="n1Q-xM-7kn" firstAttribute="centerY" secondItem="SSm-ZA-o8I" secondAttribute="centerY" constant="-70" id="0qW-tW-zER"/>
+                                    <constraint firstAttribute="trailing" secondItem="n1Q-xM-7kn" secondAttribute="trailing" constant="10" id="J58-wZ-4cd"/>
                                     <constraint firstItem="tO9-a1-4lW" firstAttribute="centerY" secondItem="SSm-ZA-o8I" secondAttribute="centerY" id="Wyi-VO-k8I"/>
                                     <constraint firstItem="tO9-a1-4lW" firstAttribute="centerX" secondItem="SSm-ZA-o8I" secondAttribute="centerX" id="fxR-J5-hTf"/>
+                                    <constraint firstItem="n1Q-xM-7kn" firstAttribute="leading" secondItem="SSm-ZA-o8I" secondAttribute="leading" constant="10" id="mmn-M9-ooh"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -333,6 +352,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tv Show" largeTitleDisplayMode="always" id="4nq-iz-A7N"/>
                     <connections>
+                        <outlet property="failedLabel" destination="n1Q-xM-7kn" id="U3A-vp-a21"/>
                         <outlet property="loadingActivityIndicator" destination="tO9-a1-4lW" id="vvT-Rh-hx5"/>
                         <outlet property="loadingView" destination="SSm-ZA-o8I" id="sHJ-Xd-rnq"/>
                         <outlet property="tableView" destination="MOs-Kj-VHk" id="pjW-Tf-862"/>
@@ -462,6 +482,12 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oWu-aA-OKh" userLabel="loadingView">
                                 <rect key="frame" x="0.0" y="44" width="320" height="475"/>
                                 <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Falha ao buscar informação!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYL-Vz-vGx">
+                                        <rect key="frame" x="10" y="156.5" width="300" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="mL0-5h-0Mx">
                                         <rect key="frame" x="141.5" y="219" width="37" height="37"/>
                                         <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -469,7 +495,10 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="MYL-Vz-vGx" firstAttribute="leading" secondItem="oWu-aA-OKh" secondAttribute="leading" constant="10" id="ALF-94-vhj"/>
+                                    <constraint firstItem="MYL-Vz-vGx" firstAttribute="centerY" secondItem="oWu-aA-OKh" secondAttribute="centerY" constant="-70" id="TzR-Wq-Vud"/>
                                     <constraint firstItem="mL0-5h-0Mx" firstAttribute="centerX" secondItem="oWu-aA-OKh" secondAttribute="centerX" id="fO5-Xu-ato"/>
+                                    <constraint firstAttribute="trailing" secondItem="MYL-Vz-vGx" secondAttribute="trailing" constant="10" id="kpb-1V-YlY"/>
                                     <constraint firstItem="mL0-5h-0Mx" firstAttribute="centerY" secondItem="oWu-aA-OKh" secondAttribute="centerY" id="zwq-K0-sxl"/>
                                 </constraints>
                             </view>
@@ -489,6 +518,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="People" largeTitleDisplayMode="always" id="qxG-Xc-CQb"/>
                     <connections>
+                        <outlet property="failedLabel" destination="MYL-Vz-vGx" id="tcX-Ra-eRM"/>
                         <outlet property="loadingActivityIndicator" destination="mL0-5h-0Mx" id="dfH-dg-cNd"/>
                         <outlet property="loadingView" destination="oWu-aA-OKh" id="TJn-MP-Ovh"/>
                         <outlet property="tableView" destination="UhP-yI-SEC" id="Ugw-hL-EJF"/>

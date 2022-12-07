@@ -12,6 +12,7 @@ class TvShowViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var failedLabel: UILabel!
     
     var midias = MidiasBrain()
     var tvShow: TvShowList?
@@ -56,7 +57,9 @@ extension TvShowViewController: TvShowDelegate {
     }
     
     func tvShowTransferFailed() {
-        print("erro")
+        DispatchQueue.main.async {
+            self.failedLabel.isHidden = false
+        }
     }
     
     

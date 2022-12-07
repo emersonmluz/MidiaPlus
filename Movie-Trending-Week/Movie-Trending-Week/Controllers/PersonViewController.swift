@@ -12,6 +12,7 @@ class PersonViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var failedLabel: UILabel!
     
     var midias = MidiasBrain()
     var person: PersonList?
@@ -67,7 +68,9 @@ extension PersonViewController: PersonDelegate {
     }
     
     func personTransferFailed() {
-        print("erro")
+        DispatchQueue.main.async {
+            self.failedLabel.isHidden = false
+        }
     }
 }
 

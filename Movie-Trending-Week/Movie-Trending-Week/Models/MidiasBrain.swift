@@ -104,7 +104,7 @@ struct MidiasBrain {
             
         } catch let error {
             print(error)
-            //personDelegate?.personTransferFailed()
+            personDelegate?.personTransferFailed()
             return
         }
     }

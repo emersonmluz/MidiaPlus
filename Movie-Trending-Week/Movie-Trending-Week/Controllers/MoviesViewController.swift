@@ -12,6 +12,7 @@ class MoviesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var failedLabel: UILabel!
     
     var midias = MidiasBrain()
     var movies: MoviesList?
@@ -41,7 +42,9 @@ extension MoviesViewController: MoviesDelegate {
     }
     
     func moviesTransferFailed() {
-        print("Erro")
+        DispatchQueue.main.async {
+            self.failedLabel.isHidden = false
+        }
     }
     
 }
