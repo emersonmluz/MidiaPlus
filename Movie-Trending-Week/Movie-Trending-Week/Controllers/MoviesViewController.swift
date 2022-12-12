@@ -19,10 +19,9 @@ class MoviesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        registerMidiasCell()
         midias.movieDelegate = self
         
-        tableView.dataSource = self
-        tableView.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -32,6 +31,13 @@ class MoviesViewController: UIViewController {
         LoadingScreen.startLoading(loadingActivity: loadingActivityIndicator, loadingView: loadingView)
         
         midias.apiRequest(midiaType: .movie)
+    }
+    
+    func registerMidiasCell() {
+        tableView.register(UINib(nibName: "MidiaTableViewCell", bundle: nil), forCellReuseIdentifier: "midiaCell")
+        
+        tableView.dataSource = self
+        tableView.delegate = self
     }
     
 }
@@ -60,7 +66,7 @@ extension MoviesViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CellSetupMovies
+        let cell = tableView.dequeueReusableCell(withIdentifier: "midiaCell") as! MidiaTableViewCell
         
         cell.loadCell(midia: movies!.moviesList[indexPath.row])
         

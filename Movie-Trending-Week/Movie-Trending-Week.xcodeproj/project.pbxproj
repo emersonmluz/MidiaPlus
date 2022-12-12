@@ -19,7 +19,6 @@
 		EEAD40D4293D8CC700D0ABCA /* TvShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD40D3293D8CC700D0ABCA /* TvShowViewController.swift */; };
 		EEAD40DE293E618E00D0ABCA /* TvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD40DD293E618E00D0ABCA /* TvShow.swift */; };
 		EEAD40E0293E620000D0ABCA /* TvShowList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD40DF293E620000D0ABCA /* TvShowList.swift */; };
-		EEAD40E2293E6B0A00D0ABCA /* CellSetupTvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD40E1293E6B0A00D0ABCA /* CellSetupTvShow.swift */; };
 		EEBA4331293A6205008ADE35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA4330293A6205008ADE35 /* AppDelegate.swift */; };
 		EEBA4333293A6205008ADE35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA4332293A6205008ADE35 /* SceneDelegate.swift */; };
 		EEBA4335293A6205008ADE35 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA4334293A6205008ADE35 /* MoviesViewController.swift */; };
@@ -30,7 +29,8 @@
 		EEBA434A293A631B008ADE35 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA4349293A631B008ADE35 /* Movie.swift */; };
 		EEBA434C293A6543008ADE35 /* MidiasBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA434B293A6543008ADE35 /* MidiasBrain.swift */; };
 		EEBA434E293A6625008ADE35 /* MidiaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA434D293A6625008ADE35 /* MidiaType.swift */; };
-		EEBA4350293A7FB3008ADE35 /* CellSetupMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA434F293A7FB3008ADE35 /* CellSetupMovies.swift */; };
+		EED683472947A1E200416056 /* MidiaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED683452947A1E200416056 /* MidiaTableViewCell.swift */; };
+		EED683482947A1E200416056 /* MidiaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EED683462947A1E200416056 /* MidiaTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +46,6 @@
 		EEAD40D3293D8CC700D0ABCA /* TvShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowViewController.swift; sourceTree = "<group>"; };
 		EEAD40DD293E618E00D0ABCA /* TvShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShow.swift; sourceTree = "<group>"; };
 		EEAD40DF293E620000D0ABCA /* TvShowList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowList.swift; sourceTree = "<group>"; };
-		EEAD40E1293E6B0A00D0ABCA /* CellSetupTvShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetupTvShow.swift; sourceTree = "<group>"; };
 		EEBA432D293A6205008ADE35 /* Movie-Trending-Week.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie-Trending-Week.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEBA4330293A6205008ADE35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEBA4332293A6205008ADE35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +58,8 @@
 		EEBA4349293A631B008ADE35 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		EEBA434B293A6543008ADE35 /* MidiasBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiasBrain.swift; sourceTree = "<group>"; };
 		EEBA434D293A6625008ADE35 /* MidiaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiaType.swift; sourceTree = "<group>"; };
-		EEBA434F293A7FB3008ADE35 /* CellSetupMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetupMovies.swift; sourceTree = "<group>"; };
+		EED683452947A1E200416056 /* MidiaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiaTableViewCell.swift; sourceTree = "<group>"; };
+		EED683462947A1E200416056 /* MidiaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MidiaTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,12 +119,12 @@
 			isa = PBXGroup;
 			children = (
 				EEBA4336293A6205008ADE35 /* Main.storyboard */,
-				EEBA434F293A7FB3008ADE35 /* CellSetupMovies.swift */,
-				EEAD40E1293E6B0A00D0ABCA /* CellSetupTvShow.swift */,
 				EE80ECF2293EBB33001EE8FB /* CellSetupPerson.swift */,
 				EE3D2862293FAFA9002A6B73 /* CellSetupKnowFor.swift */,
 				EE3D2866293FCD2B002A6B73 /* LoadingScreeen.swift */,
 				EE3D2868294149B4002A6B73 /* Alert.swift */,
+				EED683452947A1E200416056 /* MidiaTableViewCell.swift */,
+				EED683462947A1E200416056 /* MidiaTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -205,6 +205,7 @@
 			files = (
 				EEBA433D293A6208008ADE35 /* LaunchScreen.storyboard in Resources */,
 				EEBA433A293A6208008ADE35 /* Assets.xcassets in Resources */,
+				EED683482947A1E200416056 /* MidiaTableViewCell.xib in Resources */,
 				EEBA4338293A6205008ADE35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,13 +223,12 @@
 				EEBA4335293A6205008ADE35 /* MoviesViewController.swift in Sources */,
 				EE3D2861293FA2F1002A6B73 /* KnowForViewController.swift in Sources */,
 				EEAD40DE293E618E00D0ABCA /* TvShow.swift in Sources */,
+				EED683472947A1E200416056 /* MidiaTableViewCell.swift in Sources */,
 				EE3D2869294149B4002A6B73 /* Alert.swift in Sources */,
 				EEBA4331293A6205008ADE35 /* AppDelegate.swift in Sources */,
 				EE80ECF9293EBF91001EE8FB /* Actuations.swift in Sources */,
-				EEAD40E2293E6B0A00D0ABCA /* CellSetupTvShow.swift in Sources */,
 				EEBA4348293A624E008ADE35 /* MoviesList.swift in Sources */,
 				EE80ECF1293EBA64001EE8FB /* PersonViewController.swift in Sources */,
-				EEBA4350293A7FB3008ADE35 /* CellSetupMovies.swift in Sources */,
 				EEBA4333293A6205008ADE35 /* SceneDelegate.swift in Sources */,
 				EEBA434E293A6625008ADE35 /* MidiaType.swift in Sources */,
 				EEAD40E0293E620000D0ABCA /* TvShowList.swift in Sources */,

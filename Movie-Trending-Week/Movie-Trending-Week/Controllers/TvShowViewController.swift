@@ -19,10 +19,9 @@ class TvShowViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        registerMidiasCell()
         midias.tvShowDelegate = self
         
-        tableView.dataSource = self
-        tableView.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -33,6 +32,13 @@ class TvShowViewController: UIViewController {
         
         midias.apiRequest(midiaType: .tv)
     }
+    
+    func registerMidiasCell() {
+        tableView.register(UINib(nibName: "MidiaTableViewCell", bundle: nil), forCellReuseIdentifier: "midiaCell")
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
 
 }
 
@@ -42,7 +48,7 @@ extension TvShowViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CellSetupTvShow
+        let cell = tableView.dequeueReusableCell(withIdentifier: "midiaCell") as! MidiaTableViewCell
         
         cell.loadCell(midia: tvShow!.tvShowList[indexPath.row])
         
